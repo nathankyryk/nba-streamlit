@@ -206,10 +206,7 @@ with tab3:
                                    int(filtered_df['YEAR'].min()), 
                                    int(filtered_df['YEAR'].max()), 
                                    int(filtered_df['YEAR'].max()))
-    
-    with col2:
-        show_names = st.checkbox("Show Player Names", value=False)
-    
+        
     year_data = filtered_df[filtered_df['YEAR'] == selected_year].copy()
     
     # Scatter plot
@@ -331,4 +328,5 @@ with tab4:
 
 st.markdown("---")
 st.markdown("**Data Source:** NBA API (1996-2025) | **Analysis by:** Nathan Kyryk | [Portfolio](https://nathankyryk.github.io) | [GitHub](https://github.com/nathankyryk)")
+
 
