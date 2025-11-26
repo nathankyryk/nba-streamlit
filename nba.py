@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.linear_model import LinearRegression
 
+st.set_page_config(page_title="NBA 3-Point Evolution", layout="wide")
+
 st.title("NBA 3-Point Evolution: Player Analysis")
 
 @st.cache_data
@@ -329,3 +331,4 @@ with tab4:
 
 st.markdown("---")
 st.markdown("**Data Source:** NBA API (1996-2025) | **Analysis by:** Nathan Kyryk | [Portfolio](https://nathankyryk.github.io) | [GitHub](https://github.com/nathankyryk)")
+
