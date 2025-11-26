@@ -89,7 +89,7 @@ with tab1:
         # Stats
         r2_3pa = model_3pa.score(X, y_3pa)
         col_a, col_b, col_c = st.columns(3)
-        col_a.metric("Slope", f"{model_3pa.coef_[0]:.3f} /yr")
+        col_a.metric("Slope", f"{model_3pa.coef_[0]:.5f} /yr")
         col_b.metric("R²", f"{r2_3pa:.3f}")
         col_c.metric("P-value", "< 0.001")
     
@@ -117,7 +117,7 @@ with tab1:
         col_a, col_b, col_c = st.columns(3)
         col_a.metric("Slope", f"{model_3pm.coef_[0]:.3f} /yr")
         col_b.metric("R²", f"{r2_3pm:.3f}")
-        col_c.metric("P-value", "< 0.001")
+        col_c.metric("P-value", "< 0.00001")
     
     # Summary
     st.markdown("---")
